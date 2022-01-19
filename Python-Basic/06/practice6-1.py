@@ -1,14 +1,13 @@
 # 1. 분기 (If)
 
-# weather = "Sunny"
-# weather = input("오늘 날씨는 어때요? ") # input
+weather = input("오늘 날씨는 어때요? ") # input
 
-# if weather == "Rain" | weather == "Snow": # if weather == "Rain" or weather == "Snow"
-#     print("Please, Check Umbrella")
-# elif weather == "미세먼지":
-#     print("마스크를 챙기세요")
-# else:
-#     print("준비물 필요 없어요.")
+if weather == "Rain" or weather == "Snow":
+    print("Please, Check Umbrella")
+elif weather == "미세먼지":
+    print("마스크를 챙기세요")
+else:
+    print("준비물 필요 없어요.")
 
 temp = int(input("기온이 어때요? "))
 if 30 < temp:
