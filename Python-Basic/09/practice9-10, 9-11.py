@@ -1,4 +1,4 @@
-# 9. super
+# 10. 스타크래프트 예제
 
 
 from random import *
