@@ -1,15 +1,20 @@
-# 6. 다중 상속 (Multiple Inheritance)
+# 9. super
 
 # 일반 유닛
 class Unit:
-    def __init__(self, name, hp): # 클래스 생성자
+    def __init__(self, name, hp, speed): # 클래스 생성자
         self.name = name
         self.hp = hp
+        self.speed = speed
+
+    def move(self, location):
+        print("[지상 유닛 이동]")
+        print(f"{self.name} : {location} 방향으로 이동합니다. [속도 {self.speed}]")
 
 # 공격 유닛
 class AttackUnit(Unit):
-    def __init__(self, name, hp, damage):
-        Unit.__init__(self, name, hp)
+    def __init__(self, name, hp, speed, damage):
+        Unit.__init__(self, name, hp, speed)
         self.damage = damage
     def attack(self, location):
         print(f"{self.name} : {location} 방향으로 적군을 공격합니다. [공격력 : {self.damage}]")
@@ -35,9 +40,16 @@ class Flyable:
 # 공중 공격 유닛 클래스
 class FlyableAttackUnit(AttackUnit, Flyable):
     def __init__(self, name, hp, damage, flying_speed):
-        AttackUnit.__init__(self, name, hp, damage)
+        AttackUnit.__init__(self, name, hp, 0, damage) # 지상 스피드는 0
         Flyable.__init__(self, flying_speed)
+        
+    def move(self, location):
+        print("[공중 유닛 이동]")
+        self.fly(self.name, location)
 
-# 발키리 : 공중 공격 유닛 한번에 14발 정도 미사일을 발사 
-valryle = FlyableAttackUnit("발키리", 200, 6, 5)
-valryle.fly(valryle.name, "3시")
+class BuildingUnit(Unit):
+    def __init__(self, name, hp, location):
+        #Unit.__init__(self, name, hp, 0)
+        super().__init__(name, hp, 0)
+        self.location = location
+
