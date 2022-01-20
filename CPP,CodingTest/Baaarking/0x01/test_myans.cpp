@@ -2,19 +2,58 @@
 using namespace std;
 
 int func1(int N) {
-    return -1;
+    int sum = 0;
+    for (int i = 1; i <= N; i++)
+        if (i % 3 == 0 || i % 5 == 0)
+            sum += i;
+
+    return sum;
 }
 
 int func2(int arr[], int N) {
-    return -1;
+    int temp[4] = {0,};
+    int idx = 0;
+    int count = 0;
+    while (1)
+    {
+        if (idx == N) break;
+        for (int i = 0; i < N; i++)
+        {
+            if (100 - temp[i] == arr[idx]) // 합을 찾았으니 return 1
+                return 1;
+        }
+
+        temp[idx] = arr[idx];
+        idx++;
+    }
+    // 루프가 끝나서 return 1이 안되었으면 수가 없다는 이야기이므로 return 0;
+    return 0;
 }
 
 int func3(int N) {
-    return -1;
+    for (int i = 1; i * i <= N; i++)
+    {
+        if (i * i == N)
+            return 1;
+    }
+    return 0;
 }
 
 int func4(int N) {
-    return -1;
+    int i = 1;
+    while (i * 2 <= N)
+        i *= 2;
+    return i;
+   /* while (1)
+    {
+        if (i > N)
+        {
+            i /= 2;
+            return i;
+        }
+
+        i *= 2;
+    }*/
 }
 
 void test1() {
