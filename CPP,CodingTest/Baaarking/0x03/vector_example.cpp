@@ -17,4 +17,20 @@ int main(void) {
 	cout << v4[0] << v4[1] << v4[2] << '\n';
 	v4.pop_back(); // {1,2}
 	v4.clear(); // {}
+
+	vector<int> v5 = { 1,2,3,4,5,6 };
+
+	// 1. ranged-based for loop (since C++11)
+	for (auto e : v5)
+		cout << e << " ";
+	cout << "\n";
+	// 2. not bad
+	for (int i = 0; i < v5.size(); i++)
+		cout << v5[i] << " ";
+	cout << "\n";
+	// 3. wrong
+	// v5 size = 0, vector unsigned int -> overflow error!
+	for (int i = 0; i <= v5.size() - 1; i++)
+		cout << v5[i] << " ";
+	cout << "\n";
 }
