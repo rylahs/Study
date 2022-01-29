@@ -1,3 +1,6 @@
+// BOJ 1181. 단어 정렬
+// https://www.acmicpc.net/problem/1181
+
 #include <bits/stdc++.h>
 using namespace std;
 struct compare {
@@ -7,22 +10,21 @@ struct compare {
 		return a.size() < b.size();
 	}
 };
-int main_1181(void)
+int main(void)
 {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
 	int n;
 	cin >> n;
-	set<string, compare> v;
+	set<string,compare> s;
 	while (n--)
 	{
-		string s;
-		cin >> s;
-		v.insert(s);
+		string str;
+		cin >> str;
+		s.insert(str);
 	}
-	
-	for (auto e : v)
+
+	for (auto& e : s)
 		cout << e << '\n';
-	
 	return 0;
 }

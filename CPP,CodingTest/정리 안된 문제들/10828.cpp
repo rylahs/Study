@@ -1,30 +1,27 @@
+// BOJ 10828. Ω∫≈√
+// https://www.acmicpc.net/problem/10828
+
 #include <bits/stdc++.h>
 using namespace std;
 
-
-int main_10828(void)
+int main(void)
 {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
-	
+	stack<int> s;
 	int n;
 	cin >> n;
-
-	stack<int> s;
-	int top = -1;
-	for (int i = 0; i < n; i++)
+	while (n--)
 	{
-		string command;
-		cin >> command;
-		
-		if (command == "push")
+		string input;
+		cin >> input;
+		if (input == "push")
 		{
-			int x;
-			cin >> x;
-			s.push(x);
+			int a;
+			cin >> a;
+			s.push(a);
 		}
-
-		if (command == "pop")
+		else if (input == "pop")
 		{
 			if (s.empty())
 				cout << -1 << '\n';
@@ -34,19 +31,16 @@ int main_10828(void)
 				s.pop();
 			}
 		}
-
-		if (command == "size")
+		else if (input == "size")
 			cout << s.size() << '\n';
-		
-		if (command == "empty")
+		else if (input == "empty")
 		{
 			if (s.empty())
 				cout << 1 << '\n';
 			else
 				cout << 0 << '\n';
 		}
-
-		if (command == "top")
+		else if (input == "top")
 		{
 			if (s.empty())
 				cout << -1 << '\n';
@@ -55,66 +49,5 @@ int main_10828(void)
 		}
 	}
 
-
 	return 0;
 }
-
-//int arr[10001];
-//int main(void)
-//{
-//	ios::sync_with_stdio(false);
-//	cin.tie(nullptr);
-//
-//
-//	int n;
-//	cin >> n;
-//	int top = -1;
-//	for (int i = 0; i < n; i++)
-//	{
-//		string command;
-//		cin >> command;
-//		if (command == "push")
-//		{
-//			if (top != 10000)
-//				cin >> arr[++top];
-//		}
-//
-//		if (command == "top")
-//		{
-//			if (top != -1)
-//				cout << arr[top] << '\n';
-//			else
-//				cout << top << '\n';
-//		}
-//		
-//
-//		if (command == "size")
-//			cout << top + 1 << '\n';
-//
-//		if (command == "empty")
-//		{
-//			if (top == -1)
-//				cout << 1 << '\n';
-//			else
-//				cout << 0 << '\n';
-//		}
-//
-//		if (command == "pop")
-//		{
-//			if (top == -1)
-//				cout << top << '\n';
-//			else
-//			{
-//				cout << arr[top] << '\n';
-//				top--;
-//			}
-//		}
-//
-//
-//	}
-//
-//
-//
-//
-//	return 0;
-//}

@@ -1,7 +1,10 @@
+// BOJ 10773. Á¦·Î
+// https://www.acmicpc.net/problem/10773
+
 #include <bits/stdc++.h>
 using namespace std;
 
-int main_10773(void)
+int main(void)
 {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
@@ -9,14 +12,17 @@ int main_10773(void)
 	int n;
 	cin >> n;
 	stack<int> s;
-	int com;
-	for (int i = 0; i < n; i++)
+	while (n--)
 	{
-		cin >> com;
-		if (com != 0)
-			s.push(com);
-		else
+		int input;
+		cin >> input;
+		
+		if (input == 0 && s.empty())
+			continue;
+		else if (input == 0)
 			s.pop();
+		else
+			s.push(input);
 	}
 	int sum = 0;
 	while (!s.empty())
@@ -24,7 +30,6 @@ int main_10773(void)
 		sum += s.top();
 		s.pop();
 	}
-	cout << sum;
-
+	cout << sum << '\n';
 	return 0;
 }

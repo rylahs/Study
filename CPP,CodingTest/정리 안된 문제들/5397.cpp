@@ -1,50 +1,51 @@
+// BOJ 5397. Å°·Î°Å
+// https://www.acmicpc.net/problem/5397
+
 #include <bits/stdc++.h>
 using namespace std;
 
-int main_5397(void)
+int main(void)
 {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
-	
 	int testCase;
 	cin >> testCase;
-
-	for (int t = 0; t < testCase; t++)
+	while (testCase--)
 	{
-		string str1;
-		cin >> str1;
+		string inputStr;
+		cin >> inputStr;
 
-		list<char> L = {};
-		auto ptr = L.begin();
-		for (auto e : str1)
+		list<char> L;
+		auto curPtr = L.end();
+		for (int i = 0; i < inputStr.size(); i++)
 		{
-			switch (e)
+			switch (inputStr[i])
 			{
 			case '<':
-				if (ptr != L.begin())
-					ptr--;
+				if (curPtr != L.begin())
+					curPtr--;
 				break;
 			case '>':
-				if (ptr != L.end())
-					ptr++;
+				if (curPtr != L.end())
+					curPtr++;
 				break;
 			case '-':
-				if (ptr != L.begin())
+				if (curPtr != L.begin())
 				{
-					ptr--;
-					ptr = L.erase(ptr);
+					curPtr--;
+					curPtr = L.erase(curPtr);
 				}
 				break;
 			default:
-				L.insert(ptr, e);
+				L.insert(curPtr, inputStr[i]);
 				break;
 			}
 		}
-		auto iter = L.begin();
-		for (auto i = L.begin(); i != L.end(); i++)
-			cout << *i;
+		for (auto& e : L)
+			cout << e;
 		cout << '\n';
-		
 	}
+
+
 	return 0;
 }

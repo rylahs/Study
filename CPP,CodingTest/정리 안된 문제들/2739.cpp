@@ -1,13 +1,15 @@
+// BOJ 2739 ±¸±¸´Ü
+// https://www.acmicpc.net/problem/2739
 #include <bits/stdc++.h>
 using namespace std;
 
-int main_2739(void)
+int main(void)
 {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
+	
 	int n;
 	cin >> n;
-
 	for (int i = 1; i < 10; i++)
 		cout << n << " * " << i << " = " << n * i << '\n';
 

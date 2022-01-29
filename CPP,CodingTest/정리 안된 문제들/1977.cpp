@@ -1,34 +1,31 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <cmath>
+#include <algorithm>
 using namespace std;
 
-int main_1977(void)
+int main(void)
 {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
-	vector<int> v;
-	for (int i = 1; i < 101; i++)
-	{
-		int a = i * i;
-		v.emplace_back(a);
-	}
-	
+
 	int a, b;
 	cin >> a >> b;
-	
+	int mi = 10001;
 	int sum = 0;
-	for (int i = (int)sqrt(a); i < (int)sqrt(b); i++)
-		sum += v[i];
-	if (sum == 0)
+	for (int i = a; i <= b; i++)
 	{
-		sum = -1;
-		cout << sum << '\n';
+		if (int(sqrt(i)) * int(sqrt(i)) == i)
+		{
+			mi = min(mi, i);
+			sum += i;
+		}
 	}
+	if (sum == 0)
+		cout << -1;
 	else
 	{
-		cout << sum << '\n';
-		cout << v[(int)sqrt(a)];
+		cout << sum << "\n";
+		cout << mi << "\n";
 	}
-	
-
 	return 0;
 }

@@ -1,38 +1,43 @@
+// BOJ 11328. Strfry
+// https://www.acmicpc.net/problem/11328
+
 #include <bits/stdc++.h>
 using namespace std;
 
-int main_11328(void)
+int main(void) 
 {
-	ios::sync_with_stdio(false);
-	cin.tie(nullptr);
+    ios::sync_with_stdio(0);
+    cin.tie(0);
 
-	int testCase;
-	cin >> testCase;
+    int testCase;
+    cin >> testCase;
+    while (testCase--)
+    {
+        int a[26] = {};
+        string str1, str2;
+        cin >> str1 >> str2;
+        for (auto c : str1)
+            a[c - 'a']++;
+        for (auto c : str2)
+            a[c - 'a']--;
+        
 
-	string a, b;
-	for (int t = 0; t < testCase; t++)
-	{
-		bool result = true;
-		cin >> a;
-		cin >> b;
-		
-		stable_sort(a.begin(), a.end());
-		stable_sort(b.begin(), b.end());
+        bool isPossible = true;
 
-		for (int i = 0; i < a.size(); i++)
-		{
-			if (a[i] != b[i]) {
-				result = false;
-				break;
-			}
-		}
+        for (int i : a)
+        {
+            if (i != 0)
+            {
+                isPossible = false;
+                break;
+            }
+        }
 
-		if (result == true)
-			cout << "Possible" << '\n';
-		else
-			cout << "Impossible" << '\n';
-	}
+        if (isPossible == false)
+            cout << "Impossible" << '\n';
+        else
+            cout << "Possible" << '\n';
 
-
-	return 0;
+    }
+    return 0;
 }

@@ -1,37 +1,39 @@
+// BOJ 1874. 스택 수열
+// https://www.acmicpc.net/problem/1874
+
 #include <bits/stdc++.h>
 using namespace std;
 
-int main_1874()
+int main(void)
 {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
-
 	int n;
 	cin >> n;
 	stack<int> s;
-	string str = "";
 	int idx = 0;
-	for (int i = 0; i < n; i++)
+	string str = "";
+	while (n--)
 	{
 		int input;
 		cin >> input;
-
 		while (idx < input)
 		{
 			s.push(++idx);
-			str.append("+");
+			str += "+";;
 		}
 
-		if (s.top() != input) {
-			cout << "NO";
+		if (s.top() != input)
+		{
+			cout << "NO" << '\n';
 			return 0;
 		}
 
 		s.pop();
-		str.append("-");
+		str += "-";
 	}
-	for (int i = 0; i < str.size(); i++)
-		cout << str[i] << '\n';
 
+	for (auto e : str)
+		cout << e << '\n';
 	return 0;
 }

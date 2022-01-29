@@ -1,63 +1,61 @@
+// BOJ 10845. ť
+// https://www.acmicpc.net/problem/10845
+
 #include <bits/stdc++.h>
 using namespace std;
 
-int main_10845(void)
+int main(void)
 {
-	ios::sync_with_stdio(false);
-	cin.tie(nullptr);
-	
-	queue<int> q;
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    
+    int n;
+    cin >> n;
+    queue<int> Q;
+    while (n--)
+    {
+        string cmd;
+        cin >> cmd;
+        if (cmd == "push")
+        {
+            int a;
+            cin >> a;
+            Q.push(a);
+        }
+        else if (cmd == "pop")
+        {
+            if (Q.empty())
+                cout << -1 << '\n';
 
-	int n;
-	cin >> n;
-	while (n--)
-	{
-		string command;
-		cin >> command;
-		if (command == "push")
-		{
-			int input;
-			cin >> input;
-			q.push(input);
-		}
-		if (command == "pop")
-		{
-			if (!q.empty())
-			{
-				cout << q.front() << '\n';
-				q.pop();
-			}
-			else
-				cout << -1 << '\n';
-		}
-		
-		if (command == "size")
-			cout << q.size() << '\n';
-		
-		if (command == "empty")
-		{
-			if (q.empty())
-				cout << 1 << '\n';
-			else
-				cout << 0 << '\n';
-		}
+            else
+            {
+                cout << Q.front() << '\n';
+                Q.pop();
+            }
+        }
 
-		if (command == "front")
-		{
-			if (q.empty())
-				cout << -1 << '\n';
-			else
-				cout << q.front() << '\n';
-		}
-		if (command == "back")
-		{
-			if (q.empty())
-				cout << -1 << '\n';
-			else
-				cout << q.back() << '\n';
-		}
-			
-	}
+        else if (cmd == "size")
+            cout << Q.size() << '\n';
+        
+        else if (cmd == "empty")
+            cout << Q.empty() << '\n';
 
-	return 0;
+        else if (cmd == "front")
+        {
+            if (Q.empty())
+                cout << -1 << '\n';
+            else
+                cout << Q.front() << '\n';
+        }
+        
+        else if (cmd == "back")
+        {
+            if (Q.empty())
+                cout << -1 << '\n';
+            else
+                cout << Q.back() << '\n';
+        }
+    }
+
+    return 0;
 }

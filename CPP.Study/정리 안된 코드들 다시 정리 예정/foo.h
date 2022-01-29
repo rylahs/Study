@@ -1,0 +1,1 @@
+void foo(); // declaration ¼±¾ð

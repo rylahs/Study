@@ -1,23 +1,27 @@
+// BOJ 10807. 개수 세기
+// https://www.acmicpc.net/problem/10807
 #include <bits/stdc++.h>
 using namespace std;
 
-int main_10807(void)
+int a[201];
+int main(void)
 {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
-
 	int n;
 	cin >> n;
-	vector<int> v(201, 0);
-	int input;
-	for (int i = 0; i < n; i++) {
+	
+	for (int i = 0; i < n; i++)
+	{
+		int input;
 		cin >> input;
-		v[input + 100]++;
+		a[input + 100]++;
 	}
+	
 	int target;
 	cin >> target;
 
-	cout << v[target + 100];
+	cout << a[target + 100];
 
 	return 0;
 }

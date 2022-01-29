@@ -1,49 +1,52 @@
+// BOJ 1406. ¿¡µðÅÍ
+// https://www.acmicpc.net/problem/1406
+
 #include <bits/stdc++.h>
 using namespace std;
 
-int main_1406(void)
+int main(void)
 {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
 
-	string initStr;
-	cin >> initStr;
-	
-	list<char> L;
-	for (int i = 0; i < initStr.size(); i++)
-		L.emplace_back(initStr[i]);
-	auto curPtr = L.end();
+	string str;
+	cin >> str;
 
-	int orderNum;
-	cin >> orderNum;
-	
-	for (int i = 0; i < orderNum; i++)
+	list<char> L;
+	for (int i = 0; i < str.size(); i++)
+		L.emplace_back(str[i]);
+	auto curIdx = L.end();
+	int n;
+	cin >> n;
+	for (int i = 0; i < n; i++)
 	{
-		char orderCommand, ch;
-		cin >> orderCommand;
-		switch (orderCommand)
+		char input;
+		cin >> input;
+		switch (input)
 		{
 		case 'L':
-			if (curPtr != L.begin())
-				curPtr--;
+			if (curIdx != L.begin())
+				curIdx--;
 			break;
 		case 'D':
-			if (curPtr != L.end())
-				curPtr++;
+			if (curIdx != L.end())
+				curIdx++;
 			break;
 		case 'B':
-			if (curPtr != L.begin())
+			if (curIdx != L.begin())
 			{
-				curPtr--;
-				curPtr = L.erase(curPtr);
+				curIdx--;
+				curIdx = L.erase(curIdx);
 			}
 			break;
 		case 'P':
+			char ch;
 			cin >> ch;
-			L.emplace(curPtr, ch);
+			L.emplace(curIdx, ch);
 			break;
 		}
 	}
+
 	for (auto e : L)
 		cout << e;
 

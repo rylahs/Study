@@ -1,34 +1,33 @@
+// BOJ 13300. πÊπË¡§
+// https://www.acmicpc.net/problem/13300
 #include <bits/stdc++.h>
 using namespace std;
 
-int main_13300(void)
+int room[2][7];
+int main(void)
 {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
-	int n= 1, k = 1;
+	int n , k;
 	cin >> n >> k;
-	int room[2][7] = {};
-
+	int gender, grade;
 	for (int i = 0; i < n; i++)
 	{
-		int gend, grade;
-		cin >> gend >> grade;
-		room[gend][grade]++;
+		cin >> gender >> grade;
+		room[gender][grade]++;
 	}
 
-	int roomNum = 0;
-	for (int i = 0; i < 2; i++) {
-		for (int j = 0; j < 7; j++) {
-			if (room[i][j] > 0)
-			{
-				if (room[i][j] % k == 0)
-					roomNum += room[i][j] / k;
-				else
-					roomNum += (room[i][j] / k) + 1;
-			}
-		}
+	int roomnum = 0;
+	for (int i = 1; i < 8; i++)
+	{
+		roomnum += room[0][i] / k;
+		if (room[0][i] % k > 0)
+			roomnum++;
+		roomnum += room[1][i] / k;
+		if (room[1][i] % k > 0)
+			roomnum++;
 	}
+	cout << roomnum;
 
-	cout << roomNum;
 	return 0;
 }
