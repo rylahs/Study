@@ -1,34 +1,32 @@
 #include <bits/stdc++.h>
 using namespace std;
-bool isPrimeNum_A(int n)
+int number = 1000002;
+int arr[1000002];
+void primeNumberSieve(int a, int b)
 {
-	if (n < 2)
-		return false;
-	else
+	for (int i = 2; i <= number; i++)
+		arr[i] = i;
+	for (int i = 2; i <= number; i++)
 	{
-		for (int i = 2; i * i <= n; i++)
-		{
-			if (n % i == 0)
-				return false;
-		}
-		return true;
+		if (arr[i] == 0)
+			continue;
+		for (int j = i + i; j <= number; j += i)
+			arr[j] = 0;
 	}
 
+	for (int i = a; i <= b; i++)
+	{
+		if (arr[i] != 0)
+			cout << arr[i] << '\n';
+	}
 }
 
 int main_1929(void)
 {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
-
-	int a, b;
-	cin >> a >> b;
-	
-	for (int i = a; i <= b; i++)
-	{
-		if (isPrimeNum_A(i) == true)
-			cout << i << '\n';
-	}
-	
+	int m, n;
+	cin >> m >> n;
+	primeNumberSieve(m, n);
 	return 0;
 }
