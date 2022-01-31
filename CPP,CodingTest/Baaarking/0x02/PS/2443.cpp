@@ -1,7 +1,10 @@
-// BOJ 2443 별찍기 - 6
+// 0x02. 기초 코드 작성 요령
+// Written by : Rylah
+// Date : 2022.01.30
+// 2443. 별찍기 - 6
 // https://www.acmicpc.net/problem/2443
-// Written By Rylah
-// Date : 2022.01.02
+// https://www.acmicpc.net/source/38339126
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -13,14 +16,16 @@ int main(void)
 	int n;
 	cin >> n;
 
-	for (int i = n - 1; i >= 0; i--)
+	for (int i = 0; i < n; i++)
 	{
-		for (int j = 0; j < n - i - 1; j++)
-			cout << ' ';
-		for (int j = 0; j < 2 * i + 1; j++)
+		for (int j = 0; j < i; j++)
+			cout << " ";
+		for (int j = 2 * (n - i - 1) + 1; j > 0; j--)
+		{
 			cout << "*";
-
-		cout << '\n';
+		}
+		cout << "\n";
 	}
+
 	return 0;
 }

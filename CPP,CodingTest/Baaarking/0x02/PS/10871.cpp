@@ -1,7 +1,10 @@
-// BOJ 10871. X보다 작은 수
+// 0x02. 기초 코드 작성 요령
+// Written by : Rylah
+// Date : 2022.01.30
+// 10871. X보다 작은 수
 // https://www.acmicpc.net/problem/10871
-// Written By Rylah
-// Date : 2022.01.02
+// https://www.acmicpc.net/source/38335350
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -11,17 +14,19 @@ int main(void)
 	cin.tie(nullptr);
 
 	int n, x;
-	vector<int> v;
 	cin >> n >> x;
-	while (n--)
+
+	vector<int> v;
+	for (int i = 0; i < n; i++)
 	{
-		int input;
-		cin >> input;
-		if (input < x)
-			v.emplace_back(input);
+		int a;
+		cin >> a;
+		if (a < x)
+			v.emplace_back(a);
 	}
 	for (auto e : v)
-		cout << e << ' ';
+		cout << e << " ";
+	cout << "\n";
 
 	return 0;
 }

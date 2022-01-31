@@ -1,7 +1,9 @@
-// BOJ 2562. 최댓값
+// 0x02. 기초 코드 작성 요령
+// Written by : Rylah
+// Date : 2022.01.30
+// 2562. 최댓값
 // https://www.acmicpc.net/problem/2562
-// Written By Rylah
-// Date : 2022.01.03
+// https://www.acmicpc.net/source/38339836
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -9,15 +11,22 @@ int main(void)
 {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
-	
-	vector<int> v;
-	for (int i = 0; i < 9; i++)
+
+	int maxV = -1;
+
+	int n = 9;
+	int maxIdx = 0;
+	for (int i = 0; i < n; i++)
 	{
 		int a;
 		cin >> a;
-		v.emplace_back(a);
+		maxV = max(maxV, a);
+		if (maxV == a)
+			maxIdx = i + 1;
 	}
-	cout << *max_element(v.begin(), v.end()) << '\n';
-	cout << max_element(v.begin(), v.end()) - v.begin() + 1 << '\n';
+
+	cout << maxV << "\n";
+	cout << maxIdx << "\n";
+
 	return 0;
 }

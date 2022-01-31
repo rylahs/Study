@@ -1,12 +1,17 @@
-// BOJ 2557
-// Hello World
-// Hello World!를 출력하시오.
+// 0x02. 기초 코드 작성 요령
+// Written by : Rylah
+// Date : 2022.01.30
+// 1000. Hello World
 // https://www.acmicpc.net/problem/2557
-// Written By Rylah
-// Date : 2022.01.02
+// https://www.acmicpc.net/source/38335405
 
-#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
 int main(void)
 {
-	std::cout << "Hello World!" << '\n';
+	ios::sync_with_stdio(false);
+	cin.tie(nullptr);
+	cout << "Hello World!" << "\n";
+	return 0;
 }

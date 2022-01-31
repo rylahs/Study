@@ -1,7 +1,10 @@
-// BOJ 2576. 홀수
+// 0x02. 기초 코드 작성 요령
+// Written by : Rylah
+// Date : 2022.01.30
+// 2576. 홀수
 // https://www.acmicpc.net/problem/2576
-// Written By Rylah
-// Date : 2022.01.03
+// https://www.acmicpc.net/source/38336199
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -9,23 +12,27 @@ int main(void)
 {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
-	int min = 101;
-	int sum = 0;
+	
+	int n = 7;
+	vector<int> v;
+	int minV = 101;
 	for (int i = 0; i < 7; i++)
 	{
-		int input;
-		cin >> input;
-		if (input % 2 == 1)
+		int a;
+		cin >> a;
+		if (a % 2 == 1)
 		{
-			sum += input;
-			if (input < min)
-				min = input;
+			v.emplace_back(a);
+			minV = min(minV, a);
 		}
-	}
-	if (sum == 0)
-		cout << -1;
-	else
-		cout << sum << '\n' << min << '\n';
 
+	}
+	if (v.empty())
+		cout << -1 << "\n";
+	else
+	{
+		cout << accumulate(v.begin(), v.end(), 0) << "\n";
+		cout << minV << "\n";
+	}
 	return 0;
 }

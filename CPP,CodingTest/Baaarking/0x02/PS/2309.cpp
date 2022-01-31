@@ -1,20 +1,20 @@
-// BOJ 2309. 일곱 난쟁이
+// 0x02. 기초 코드 작성 요령
+// Written by : Rylah
+// Date : 2022.01.30
+// 2309. 일곱 난쟁이
 // https://www.acmicpc.net/problem/2309
+// https://www.acmicpc.net/source/38336591
 
 // Idea
 // 9개의 배열중 7개의 배열의 합을 구해야하므로
 // N의 값이 9로 정해져있으므로 3중 for문을 구해도 시간 복잡도는 만족 할 수 있다.
 // 1st loop에 선택된 i의 idx를 배제
 // 2st loop에 선택된 j의 idx를 배제
-// 3rd loop에 선택된 k의 원소 7개를 ResultVec에 삽입
+// 3rd loop에 선택된 k의 원소 7개를 ans Vector에 삽입
 // 합이 100이면 break;
 // 일곱난쟁이를 못찾는 경우는 없기에 무조건 답이 발생하는 문제이다.
-// resultVec을 sorting
+// ans Vector를 sorting
 // 출력
-
-// Written By Rylah
-// Date : 2022.01.02
-
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -23,38 +23,42 @@ int main(void)
 {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
-	vector<int> inputVec;
-	vector<int> resultVec;
+
+	vector<int> v;
+	int a;
 	for (int i = 0; i < 9; i++)
 	{
-		int input;
-		cin >> input;
-		inputVec.emplace_back(input);
+		cin >> a;
+		v.emplace_back(a);
 	}
 
-	for (int i = 0; i < inputVec.size(); i++)
+	vector<int> z;
+	for (int i = 0; i < 9; i++)
 	{
-		for (int j = 0; j < inputVec.size(); j++)
+
+		for (int j = 0; j < 9; j++)
 		{
-			resultVec.clear();
 			if (i == j)
 				continue;
-			for (int k = 0; k < inputVec.size(); k++)
+			z.clear();
+			for (int k = 0; k < 9; k++)
 			{
-				if (i == k || j == k)
+				if (j == k || i == k)
 					continue;
-
-				resultVec.emplace_back(inputVec[k]);
+				z.emplace_back(v[k]);
 			}
-			if (accumulate(resultVec.begin(), resultVec.end(), 0) == 100)
+			if (accumulate(z.begin(), z.end(), 0) == 100)
 				break;
 		}
-		if (accumulate(resultVec.begin(), resultVec.end(), 0) == 100)
+		if (accumulate(z.begin(), z.end(), 0) == 100)
 			break;
 	}
-	sort(resultVec.begin(), resultVec.end());
-	for (auto e : resultVec)
-		cout << e << '\n';
+
+	sort(z.begin(), z.end());
+
+	for (auto& e : z)
+		cout << e << "\n";
+
 
 	return 0;
 }

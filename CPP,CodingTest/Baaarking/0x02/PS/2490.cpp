@@ -1,7 +1,10 @@
-// BOJ 2490. ¿∑≥Ó¿Ã
+// 0x02. ±‚√  ƒ⁄µÂ ¿€º∫ ø‰∑…
+// Written by : Rylah
+// Date : 2022.01.30
+// 2490. ¿∑≥Ó¿Ã
 // https://www.acmicpc.net/problem/2490
-// Written By Rylah
-// Date : 2022.01.03
+// https://www.acmicpc.net/source/38336078
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -10,39 +13,20 @@ int main(void)
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
 
-	int testCase = 3;
-	vector<int> v;
-	while (testCase--)
+	char yut[5] = { 'D', 'C', 'B', 'A', 'E' };
+	int n = 3;
+	for (int i = 0; i < n; i++)
 	{
-		int input;
-		v.clear();
-		for (int i = 0; i < 4; i++)
+		int sum = 0;
+		for (int j = 0; j < 4; j++)
 		{
-			cin >> input;
-			v.emplace_back(input);
+			int a;
+			cin >> a;
+			sum += a;
 		}
-		int oneCount = 0;
-		for (auto e : v)
-			if (e == 1)	oneCount++;
 
-		switch (oneCount)
-		{
-		case 0:
-			cout << 'D' << '\n';
-			break;
-		case 1:
-			cout << 'C' << '\n';
-			break;
-		case 2:
-			cout << 'B' << '\n';
-			break;
-		case 3:
-			cout << 'A' << '\n';
-			break;
-		case 4:
-			cout << 'E' << '\n';
-			break;
-		}
+		cout << yut[sum] << "\n";
 	}
+
 	return 0;
 }

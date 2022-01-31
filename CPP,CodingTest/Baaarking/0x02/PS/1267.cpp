@@ -1,7 +1,10 @@
-// BOJ 1267. 핸드폰 요금
+// 0x02. 기초 코드 작성 요령
+// Written by : Rylah
+// Date : 2022.01.30
+// 1267. 핸드폰 요금
 // https://www.acmicpc.net/problem/1267
-// Written By Rylah
-// Date : 2022.01.02
+// https://www.acmicpc.net/source/38338125
+
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -10,6 +13,7 @@ int main(void)
 {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
+
 	int N;
 	cin >> N;
 	vector<int> v;
