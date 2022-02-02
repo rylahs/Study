@@ -1,56 +1,100 @@
-// BOJ 1406. 에디터
-// Written Date : 22.01.20
-// Writer : Rylah
+// 0x04. 연결 리스트 
+// Written by : Rylah
+// Date : 2022.02.02
+// 1406. 에디터 
 // https://www.acmicpc.net/problem/1406
-
+// https://www.acmicpc.net/source/38452027
 #include <bits/stdc++.h>
 using namespace std;
+
+const int MAX = 1000004;
+char dat[MAX];
+int pre[MAX];
+int nxt[MAX];
+int unused = 1;
+
+
+void insert(int addr, int num)
+{
+	dat[unused] = num;
+	pre[unused] = addr;
+	nxt[unused] = nxt[addr];
+
+	if (nxt[addr] != -1)
+		pre[nxt[addr]] = unused;
+	nxt[addr] = unused;
+	unused++;
+}
+
+void erase(int addr)
+{
+	nxt[pre[addr]] = nxt[addr];
+	if (nxt[addr] != -1)
+		pre[nxt[addr]] = pre[addr];
+}
+
+void traversal() {
+	int cur = nxt[0];
+	while (cur != -1)
+	{
+		cout << dat[cur];
+		cur = nxt[cur];
+	}
+}
 
 int main(void)
 {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
+	fill(pre, pre + MAX, -1);
+	fill(nxt, nxt + MAX, -1);
 
 	string str;
 	cin >> str;
 
-	list<char> L;
-	for (int i = 0; i < str.size(); i++)
-		L.emplace_back(str[i]);
-	auto curIdx = L.end();
-	int n;
-	cin >> n;
-	for (int i = 0; i < n; i++)
+	int cursor = 0;
+	for (auto& e : str)
 	{
-		char input;
-		cin >> input;
-		switch (input)
+		insert(cursor, e);
+		cursor++;
+	}
+
+	int m;
+	cin >> m;
+
+	while (m--)
+	{
+		char com;
+		cin >> com;
+
+		if (com == 'L')
 		{
-		case 'L':
-			if (curIdx != L.begin())
-				curIdx--;
-			break;
-		case 'D':
-			if (curIdx != L.end())
-				curIdx++;
-			break;
-		case 'B':
-			if (curIdx != L.begin())
+			if (pre[cursor] != -1)
+				cursor = pre[cursor];
+		}
+		else if (com == 'D')
+		{
+			if (nxt[cursor] != -1)
+				cursor = nxt[cursor];
+		}
+		else if (com == 'B')
+		{
+			if (pre[cursor] != -1)
 			{
-				curIdx--;
-				curIdx = L.erase(curIdx);
+				erase(cursor);
+				cursor = pre[cursor];
 			}
-			break;
-		case 'P':
-			char ch;
-			cin >> ch;
-			L.emplace(curIdx, ch);
-			break;
+
+		}
+		else if (com == 'P')
+		{
+			char input;
+			cin >> input;
+			insert(cursor, input);
+			cursor = nxt[cursor];
 		}
 	}
 
-	for (auto e : L)
-		cout << e;
-
+	traversal();
 	return 0;
 }
