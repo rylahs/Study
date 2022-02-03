@@ -1,4 +1,4 @@
-#include "002.cat.h"
+#include "02.cat.h"
 int main(void)
 {
 	Cat kitty;
