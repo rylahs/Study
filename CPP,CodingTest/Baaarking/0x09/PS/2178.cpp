@@ -1,7 +1,7 @@
 // 0x09. BFS
 // Written by : Rylah
 // Date : 2022.02.05
-// 2178. ¹Ì·Î Å½»ö
+// 2178. ¹Ì·Î Å½»ö 
 // https://www.acmicpc.net/problem/2178
 // https://www.acmicpc.net/source/38639086
 

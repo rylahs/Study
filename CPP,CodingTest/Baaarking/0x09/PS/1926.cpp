@@ -1,7 +1,7 @@
 // 0x09. BFS
 // Written by : Rylah
 // Date : 2022.02.05
-// 1926. 그림
+// 1926. 그림 
 // https://www.acmicpc.net/problem/1926
 // https://www.acmicpc.net/source/38628465
 
