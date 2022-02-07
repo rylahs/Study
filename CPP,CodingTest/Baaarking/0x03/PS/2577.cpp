@@ -1,7 +1,7 @@
-// 0x03. ¹è¿­
+ï»¿// 0x03. ë°°ì—´
 // Written by : Rylah
 // Date : 2022.01.30
-// 2577. ¼ıÀÚÀÇ °³¼ö
+// 2577. ìˆ«ìì˜ ê°œìˆ˜
 // https://www.acmicpc.net/problem/2577
 // https://www.acmicpc.net/source/38360489
 

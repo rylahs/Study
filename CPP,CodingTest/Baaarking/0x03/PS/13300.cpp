@@ -1,7 +1,7 @@
-// 0x03. ¹è¿­
+ï»¿// 0x03. ë°°ì—´
 // Written by : Rylah
 // Date : 2022.01.31
-// 13300. ¹æ ¹èÁ¤
+// 13300. ë°© ë°°ì •
 // https://www.acmicpc.net/problem/13300
 // https://www.acmicpc.net/source/38382640
 

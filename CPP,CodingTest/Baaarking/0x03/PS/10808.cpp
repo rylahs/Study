@@ -1,7 +1,7 @@
-// 0x03. ¹è¿­
+ï»¿// 0x03. ë°°ì—´
 // Written by : Rylah
 // Date : 2022.01.30
-// 10808. ¾ËÆÄºª °³¼ö
+// 10808. ì•ŒíŒŒë²³ ê°œìˆ˜
 // https://www.acmicpc.net/problem/10808
 // https://www.acmicpc.net/source/38360131
 
