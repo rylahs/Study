@@ -1,4 +1,4 @@
-// This code is not Written by Rylah
+﻿// This code is not Written by Rylah
 // Written by BaaaaarkingDog just compare Implementaion me.
 #include <bits/stdc++.h>
 using namespace std;

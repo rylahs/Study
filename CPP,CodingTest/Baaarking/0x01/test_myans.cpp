@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+ï»¿#include <bits/stdc++.h>
 using namespace std;
 
 int func1(int N) {
@@ -19,14 +19,14 @@ int func2(int arr[], int N) {
         if (idx == N) break;
         for (int i = 0; i < N; i++)
         {
-            if (100 - temp[i] == arr[idx]) // ÇÕÀ» Ã£¾ÒÀ¸´Ï return 1
+            if (100 - temp[i] == arr[idx]) // í•©ì„ ì°¾ì•˜ìœ¼ë‹ˆ return 1
                 return 1;
         }
 
         temp[idx] = arr[idx];
         idx++;
     }
-    // ·çÇÁ°¡ ³¡³ª¼­ return 1ÀÌ ¾ÈµÇ¾úÀ¸¸é ¼ö°¡ ¾ø´Ù´Â ÀÌ¾ß±âÀÌ¹Ç·Î return 0;
+    // ë£¨í”„ê°€ ëë‚˜ì„œ return 1ì´ ì•ˆë˜ì—ˆìœ¼ë©´ ìˆ˜ê°€ ì—†ë‹¤ëŠ” ì´ì•¼ê¸°ì´ë¯€ë¡œ return 0;
     return 0;
 }
 
