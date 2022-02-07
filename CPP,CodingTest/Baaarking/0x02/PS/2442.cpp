@@ -1,7 +1,7 @@
-// 0x02. ±âÃÊ ÄÚµå ÀÛ¼º ¿ä·É
+ï»¿// 0x02. ê¸°ì´ˆ ì½”ë“œ ì‘ì„± ìš”ë ¹
 // Written by : Rylah
 // Date : 2022.01.30
-// 2442. º°Âï±â - 5
+// 2442. ë³„ì°ê¸° - 5
 // https://www.acmicpc.net/problem/2442
 // https://www.acmicpc.net/source/38339038
 

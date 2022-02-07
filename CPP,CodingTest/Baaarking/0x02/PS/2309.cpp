@@ -1,20 +1,20 @@
-// 0x02. ±âÃÊ ÄÚµå ÀÛ¼º ¿ä·É
+ï»¿// 0x02. ê¸°ì´ˆ ì½”ë“œ ìž‘ì„± ìš”ë ¹
 // Written by : Rylah
 // Date : 2022.01.30
-// 2309. ÀÏ°ö ³­ÀïÀÌ
+// 2309. ì¼ê³± ë‚œìŸì´
 // https://www.acmicpc.net/problem/2309
 // https://www.acmicpc.net/source/38336591
 
 // Idea
-// 9°³ÀÇ ¹è¿­Áß 7°³ÀÇ ¹è¿­ÀÇ ÇÕÀ» ±¸ÇØ¾ßÇÏ¹Ç·Î
-// NÀÇ °ªÀÌ 9·Î Á¤ÇØÁ®ÀÖÀ¸¹Ç·Î 3Áß for¹®À» ±¸ÇØµµ ½Ã°£ º¹Àâµµ´Â ¸¸Á· ÇÒ ¼ö ÀÖ´Ù.
-// 1st loop¿¡ ¼±ÅÃµÈ iÀÇ idx¸¦ ¹èÁ¦
-// 2st loop¿¡ ¼±ÅÃµÈ jÀÇ idx¸¦ ¹èÁ¦
-// 3rd loop¿¡ ¼±ÅÃµÈ kÀÇ ¿ø¼Ò 7°³¸¦ ans Vector¿¡ »ðÀÔ
-// ÇÕÀÌ 100ÀÌ¸é break;
-// ÀÏ°ö³­ÀïÀÌ¸¦ ¸øÃ£´Â °æ¿ì´Â ¾ø±â¿¡ ¹«Á¶°Ç ´äÀÌ ¹ß»ýÇÏ´Â ¹®Á¦ÀÌ´Ù.
-// ans Vector¸¦ sorting
-// Ãâ·Â
+// 9ê°œì˜ ë°°ì—´ì¤‘ 7ê°œì˜ ë°°ì—´ì˜ í•©ì„ êµ¬í•´ì•¼í•˜ë¯€ë¡œ
+// Nì˜ ê°’ì´ 9ë¡œ ì •í•´ì ¸ìžˆìœ¼ë¯€ë¡œ 3ì¤‘ forë¬¸ì„ êµ¬í•´ë„ ì‹œê°„ ë³µìž¡ë„ëŠ” ë§Œì¡± í•  ìˆ˜ ìžˆë‹¤.
+// 1st loopì— ì„ íƒëœ iì˜ idxë¥¼ ë°°ì œ
+// 2st loopì— ì„ íƒëœ jì˜ idxë¥¼ ë°°ì œ
+// 3rd loopì— ì„ íƒëœ kì˜ ì›ì†Œ 7ê°œë¥¼ ans Vectorì— ì‚½ìž…
+// í•©ì´ 100ì´ë©´ break;
+// ì¼ê³±ë‚œìŸì´ë¥¼ ëª»ì°¾ëŠ” ê²½ìš°ëŠ” ì—†ê¸°ì— ë¬´ì¡°ê±´ ë‹µì´ ë°œìƒí•˜ëŠ” ë¬¸ì œì´ë‹¤.
+// ans Vectorë¥¼ sorting
+// ì¶œë ¥
 
 #include <bits/stdc++.h>
 using namespace std;

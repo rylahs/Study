@@ -1,7 +1,7 @@
-// 0x02. ±âÃÊ ÄÚµå ÀÛ¼º ¿ä·É
+ï»¿// 0x02. ê¸°ì´ˆ ì½”ë“œ ìž‘ì„± ìš”ë ¹
 // Written by : Rylah
 // Date : 2022.01.30
-// 2562. ÃÖ´ñ°ª maxElement
+// 2562. ìµœëŒ“ê°’ maxElement
 // https://www.acmicpc.net/problem/2562
 // https://www.acmicpc.net/source/38339942
 #include <bits/stdc++.h>

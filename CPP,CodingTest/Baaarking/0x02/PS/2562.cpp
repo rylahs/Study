@@ -1,7 +1,7 @@
-// 0x02. ±âÃÊ ÄÚµå ÀÛ¼º ¿ä·É
+ï»¿// 0x02. ê¸°ì´ˆ ì½”ë“œ ìž‘ì„± ìš”ë ¹
 // Written by : Rylah
 // Date : 2022.01.30
-// 2562. ÃÖ´ñ°ª
+// 2562. ìµœëŒ“ê°’
 // https://www.acmicpc.net/problem/2562
 // https://www.acmicpc.net/source/38339836
 #include <bits/stdc++.h>

@@ -1,4 +1,4 @@
-// BOJ 2577. ¼ıÀÚÀÇ °³¼ö
+ï»¿// BOJ 2577. ìˆ«ìì˜ ê°œìˆ˜
 // https://www.acmicpc.net/problem/2577
 // Written By Rylah
 // Date : 2022.01.03
