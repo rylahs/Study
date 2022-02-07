@@ -1,4 +1,4 @@
-// BOJ 1406. ¿¡µğÅÍ
+ï»¿// BOJ 1406. ì—ë””í„°
 // Written Date : 22.01.20
 // Writer : Rylah
 // https://www.acmicpc.net/problem/1406

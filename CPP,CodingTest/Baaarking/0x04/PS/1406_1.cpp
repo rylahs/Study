@@ -1,7 +1,7 @@
-// 0x04. ¿¬°á ¸®½ºÆ® 
+ï»¿// 0x04. ì—°ê²° ë¦¬ìŠ¤íŠ¸
 // Written by : Rylah
 // Date : 2022.02.02
-// 1406. ¿¡µğÅÍ 
+// 1406. ì—ë””í„° 
 // https://www.acmicpc.net/problem/1406
 // https://www.acmicpc.net/source/38452027
 #include <bits/stdc++.h>

@@ -1,4 +1,4 @@
-// BOJ 1475. ¹æ¹øÈ£
+ï»¿// BOJ 1475. ë°©ë²ˆí˜¸
 // Written Date : 22.01.20
 // Writer : Rylah
 // https://www.acmicpc.net/problem/1475
@@ -22,7 +22,7 @@ int main(void)
 	for (int i = 0; i < 10; i++)
 	{
 		if (i == 6 || i == 9)
-			continue; // µû·Î ³ªÁß¿¡ °è»ê
+			continue; // ë”°ë¡œ ë‚˜ì¤‘ì— ê³„ì‚°
 		minSet = max(arr[i], minSet);
 	}
 	int snNum = (arr[6] + arr[9]) / 2;
