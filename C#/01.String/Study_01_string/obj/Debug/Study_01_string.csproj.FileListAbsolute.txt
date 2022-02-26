@@ -1,0 +1,11 @@
+C:\Users\Rylah\source\repos\Study_01_string\Study_01_string\obj\Debug\Study_01_string.csproj.AssemblyReference.cache
+C:\Users\Rylah\source\repos\Study_01_string\Study_01_string\obj\Debug\Study_01_string.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rylah\source\repos\Study_01_string\Study_01_string\obj\Debug\Study_01_string.Form1.resources
+C:\Users\Rylah\source\repos\Study_01_string\Study_01_string\obj\Debug\Study_01_string.Properties.Resources.resources
+C:\Users\Rylah\source\repos\Study_01_string\Study_01_string\obj\Debug\Study_01_string.csproj.GenerateResource.cache
+C:\Users\Rylah\source\repos\Study_01_string\Study_01_string\obj\Debug\Study_01_string.csproj.CoreCompileInputs.cache
+C:\Users\Rylah\source\repos\Study_01_string\Study_01_string\bin\Debug\Study_01_string.exe.config
+C:\Users\Rylah\source\repos\Study_01_string\Study_01_string\bin\Debug\Study_01_string.exe
+C:\Users\Rylah\source\repos\Study_01_string\Study_01_string\bin\Debug\Study_01_string.pdb
+C:\Users\Rylah\source\repos\Study_01_string\Study_01_string\obj\Debug\Study_01_string.exe
+C:\Users\Rylah\source\repos\Study_01_string\Study_01_string\obj\Debug\Study_01_string.pdb
