@@ -1,0 +1,11 @@
+C:\Users\Rylah\source\repos\Study_04_Operator\Study_04_Operator\bin\Debug\Study_04_Operator.exe.config
+C:\Users\Rylah\source\repos\Study_04_Operator\Study_04_Operator\bin\Debug\Study_04_Operator.exe
+C:\Users\Rylah\source\repos\Study_04_Operator\Study_04_Operator\bin\Debug\Study_04_Operator.pdb
+C:\Users\Rylah\source\repos\Study_04_Operator\Study_04_Operator\obj\Debug\Study_04_Operator.csproj.AssemblyReference.cache
+C:\Users\Rylah\source\repos\Study_04_Operator\Study_04_Operator\obj\Debug\Study_04_Operator.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rylah\source\repos\Study_04_Operator\Study_04_Operator\obj\Debug\Study_04_Operator.Form1.resources
+C:\Users\Rylah\source\repos\Study_04_Operator\Study_04_Operator\obj\Debug\Study_04_Operator.Properties.Resources.resources
+C:\Users\Rylah\source\repos\Study_04_Operator\Study_04_Operator\obj\Debug\Study_04_Operator.csproj.GenerateResource.cache
+C:\Users\Rylah\source\repos\Study_04_Operator\Study_04_Operator\obj\Debug\Study_04_Operator.csproj.CoreCompileInputs.cache
+C:\Users\Rylah\source\repos\Study_04_Operator\Study_04_Operator\obj\Debug\Study_04_Operator.exe
+C:\Users\Rylah\source\repos\Study_04_Operator\Study_04_Operator\obj\Debug\Study_04_Operator.pdb
