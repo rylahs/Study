@@ -1,0 +1,11 @@
+C:\Users\Rylah\source\repos\Study_03_Method\Study_03_Method\bin\Debug\Study_03_Method.exe.config
+C:\Users\Rylah\source\repos\Study_03_Method\Study_03_Method\bin\Debug\Study_03_Method.exe
+C:\Users\Rylah\source\repos\Study_03_Method\Study_03_Method\bin\Debug\Study_03_Method.pdb
+C:\Users\Rylah\source\repos\Study_03_Method\Study_03_Method\obj\Debug\Study_03_Method.csproj.AssemblyReference.cache
+C:\Users\Rylah\source\repos\Study_03_Method\Study_03_Method\obj\Debug\Study_03_Method.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rylah\source\repos\Study_03_Method\Study_03_Method\obj\Debug\Study_03_Method.Form1.resources
+C:\Users\Rylah\source\repos\Study_03_Method\Study_03_Method\obj\Debug\Study_03_Method.Properties.Resources.resources
+C:\Users\Rylah\source\repos\Study_03_Method\Study_03_Method\obj\Debug\Study_03_Method.csproj.GenerateResource.cache
+C:\Users\Rylah\source\repos\Study_03_Method\Study_03_Method\obj\Debug\Study_03_Method.csproj.CoreCompileInputs.cache
+C:\Users\Rylah\source\repos\Study_03_Method\Study_03_Method\obj\Debug\Study_03_Method.exe
+C:\Users\Rylah\source\repos\Study_03_Method\Study_03_Method\obj\Debug\Study_03_Method.pdb
