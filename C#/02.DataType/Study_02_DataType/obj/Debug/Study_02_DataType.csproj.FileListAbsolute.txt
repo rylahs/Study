@@ -1,0 +1,11 @@
+C:\Users\Rylah\source\repos\Study_02_DataType\Study_02_DataType\bin\Debug\Study_02_DataType.exe.config
+C:\Users\Rylah\source\repos\Study_02_DataType\Study_02_DataType\bin\Debug\Study_02_DataType.exe
+C:\Users\Rylah\source\repos\Study_02_DataType\Study_02_DataType\bin\Debug\Study_02_DataType.pdb
+C:\Users\Rylah\source\repos\Study_02_DataType\Study_02_DataType\obj\Debug\Study_02_DataType.csproj.AssemblyReference.cache
+C:\Users\Rylah\source\repos\Study_02_DataType\Study_02_DataType\obj\Debug\Study_02_DataType.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rylah\source\repos\Study_02_DataType\Study_02_DataType\obj\Debug\Study_02_DataType.Form1.resources
+C:\Users\Rylah\source\repos\Study_02_DataType\Study_02_DataType\obj\Debug\Study_02_DataType.Properties.Resources.resources
+C:\Users\Rylah\source\repos\Study_02_DataType\Study_02_DataType\obj\Debug\Study_02_DataType.csproj.GenerateResource.cache
+C:\Users\Rylah\source\repos\Study_02_DataType\Study_02_DataType\obj\Debug\Study_02_DataType.csproj.CoreCompileInputs.cache
+C:\Users\Rylah\source\repos\Study_02_DataType\Study_02_DataType\obj\Debug\Study_02_DataType.exe
+C:\Users\Rylah\source\repos\Study_02_DataType\Study_02_DataType\obj\Debug\Study_02_DataType.pdb
