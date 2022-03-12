@@ -1,15 +1,12 @@
 // 0xFD. Practice
 // Written by : Rylah
 // Date : 2022.03.12
-// 1780. 종이의 개수
+// 1992. 쿼드 트리
 
 #include <bits/stdc++.h>
 using namespace std;
 
-int board[130][130];
-int cnt[2];
-
-
+int board[70][70];
 
 bool check(int x, int y, int n)
 {
@@ -20,21 +17,17 @@ bool check(int x, int y, int n)
 	return true;
 }
 
-
-
-
-
-void paper(int x, int y, int n)
+void quad_tree(int x, int y, int n)
 {
 	if (check(x, y, n))
 	{
-		++cnt[board[x][y]];
+		cout << board[x][y];
 		return;
 	}
 
 	for (int i = 0; i < 2; i++)
 		for (int j = 0; j < 2; j++)
-			paper(x + i * n / 2, y + j * n / 2, n / 2);
+			quad_tree(x + i * n / 2, y * n / 2, n / 2);
 }
 
 
@@ -47,12 +40,15 @@ int main(void)
 	cin >> n;
 
 	for (int i = 0; i < n; i++)
+	{
+		string str;
+		cin >> str;
 		for (int j = 0; j < n; j++)
-			cin >> board[i][j];
+			board[i][j] = str[j] - '0';
+	}
 
-	paper(0, 0, n);
-	for (int i = 0; i < 2; i++)
-		cout << cnt[i] << "\n";
+	quad_tree(0, 0, n);
+
 	return 0;
 }
 
