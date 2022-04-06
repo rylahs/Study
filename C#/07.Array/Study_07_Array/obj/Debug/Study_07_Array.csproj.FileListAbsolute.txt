@@ -1,0 +1,11 @@
+C:\Rylah\Study_07_Array\Study_07_Array\bin\Debug\Study_07_Array.exe.config
+C:\Rylah\Study_07_Array\Study_07_Array\bin\Debug\Study_07_Array.exe
+C:\Rylah\Study_07_Array\Study_07_Array\bin\Debug\Study_07_Array.pdb
+C:\Rylah\Study_07_Array\Study_07_Array\obj\Debug\Study_07_Array.csproj.AssemblyReference.cache
+C:\Rylah\Study_07_Array\Study_07_Array\obj\Debug\Study_07_Array.csproj.SuggestedBindingRedirects.cache
+C:\Rylah\Study_07_Array\Study_07_Array\obj\Debug\Study_07_Array.Form1.resources
+C:\Rylah\Study_07_Array\Study_07_Array\obj\Debug\Study_07_Array.Properties.Resources.resources
+C:\Rylah\Study_07_Array\Study_07_Array\obj\Debug\Study_07_Array.csproj.GenerateResource.cache
+C:\Rylah\Study_07_Array\Study_07_Array\obj\Debug\Study_07_Array.csproj.CoreCompileInputs.cache
+C:\Rylah\Study_07_Array\Study_07_Array\obj\Debug\Study_07_Array.exe
+C:\Rylah\Study_07_Array\Study_07_Array\obj\Debug\Study_07_Array.pdb

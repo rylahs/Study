@@ -1,0 +1,11 @@
+C:\Users\Rylah\source\repos\Study_05_Enum\Study_05_Enum\bin\Debug\Study_05_Enum.exe.config
+C:\Users\Rylah\source\repos\Study_05_Enum\Study_05_Enum\bin\Debug\Study_05_Enum.exe
+C:\Users\Rylah\source\repos\Study_05_Enum\Study_05_Enum\bin\Debug\Study_05_Enum.pdb
+C:\Users\Rylah\source\repos\Study_05_Enum\Study_05_Enum\obj\Debug\Study_05_Enum.csproj.AssemblyReference.cache
+C:\Users\Rylah\source\repos\Study_05_Enum\Study_05_Enum\obj\Debug\Study_05_Enum.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rylah\source\repos\Study_05_Enum\Study_05_Enum\obj\Debug\Study_05_Enum.Form1.resources
+C:\Users\Rylah\source\repos\Study_05_Enum\Study_05_Enum\obj\Debug\Study_05_Enum.Properties.Resources.resources
+C:\Users\Rylah\source\repos\Study_05_Enum\Study_05_Enum\obj\Debug\Study_05_Enum.csproj.GenerateResource.cache
+C:\Users\Rylah\source\repos\Study_05_Enum\Study_05_Enum\obj\Debug\Study_05_Enum.csproj.CoreCompileInputs.cache
+C:\Users\Rylah\source\repos\Study_05_Enum\Study_05_Enum\obj\Debug\Study_05_Enum.exe
+C:\Users\Rylah\source\repos\Study_05_Enum\Study_05_Enum\obj\Debug\Study_05_Enum.pdb
